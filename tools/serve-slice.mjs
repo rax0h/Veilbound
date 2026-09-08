@@ -8,13 +8,15 @@ const types = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 
 createServer(async (request, response) => {
   try {
-    const requested = request.url === '/' ? '/index.html' : decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+    const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+    const requested = pathname === '/' ? '/index.html' : pathname;
     const path = normalize(join(root, requested));
     const fromRoot = relative(root, path);
     if (fromRoot === '..' || fromRoot.startsWith(`..${sep}`) || fromRoot.includes(`.${sep}..${sep}`)) throw new Error('Outside repository boundary.');
-    await stat(path);
+    if (!(await stat(path)).isFile()) throw new Error('Not a file.');
+    const content = await readFile(path);
     response.writeHead(200, { 'content-type': types[extname(path)] || 'application/octet-stream', 'cache-control': 'no-cache' });
-    response.end(await readFile(path));
+    response.end(content);
   } catch {
     response.writeHead(404);
     response.end('Not found');

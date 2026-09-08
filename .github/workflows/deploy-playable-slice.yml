@@ -52,6 +52,7 @@ jobs:
               cp -R "assets/$dir" "_site/assets/$dir"
             fi
           done
+          node --input-type=module -e "import {writeFileSync} from 'node:fs'; writeFileSync('_site/build.json', JSON.stringify({commit:process.env.GITHUB_SHA,scene:'riverford-verge'}));"
           touch _site/.nojekyll
 
       - name: Configure GitHub Pages

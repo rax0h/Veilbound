@@ -5,6 +5,7 @@
   "type": "module",
   "description": "Clean production codebase for Veilbound. No rejected prototype renderer or placeholder art.",
   "scripts": {
+    "dev": "node tools/serve-slice.mjs",
     "assets:materialize": "python tools/materialize-gold-standard-assets.py",
     "prestart": "npm run assets:materialize",
     "start": "node tools/serve-slice.mjs",
