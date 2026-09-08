@@ -5,3 +5,13 @@ dist/
 build/
 .cache/
 *.log
+
+# Materialized from the preserved Gold Standard source ZIPs. Runtime art is
+# deliberately reconstructed locally so PR transports that reject binary diffs
+# only need to carry the already-versioned source packages.
+/assets/atmosphere/
+/assets/characters/
+/assets/creatures/
+/assets/environment/
+/assets/props/
+/assets/ui/

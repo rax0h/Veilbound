@@ -12,13 +12,15 @@
 - Deterministic world clock, save/input boundaries, and world entity collection.
 - Production visual/camera contracts and asset rejection gates.
 
+## Playable-slice implementation
+
+- Browser DOM/CSS production-art compositor for the Riverford Verge scene.
+- Keyboard exploration, companion following, farmer interaction, deterministic save boundary, dire-wolf combat, defeat/continuation, and one Binding Aura presentation.
+- All 46 files from the two Gold Standard source packages are extracted and mapped; the slice visibly uses a curated subset rather than presenting an asset gallery.
+
 ## Not implemented yet
 
-- No production renderer.
-- No complete production environment art library.
-- No production character body/animation library.
-- No production creature art library.
-- No production VFX library.
-- No finished playable scene.
+- Character locomotion and combat animation frames beyond the supplied static representations.
+- Audio, gamepad/touch input, authored collision meshes, and broader geographic content.
 
-The absence of a renderer is deliberate: missing art must fail closed rather than silently producing placeholder geometry.
+The renderer has no primitive fallback: missing production art continues to fail closed rather than silently producing placeholder geometry.

@@ -1,0 +1,746 @@
+{
+  "version": 1,
+  "status": "production",
+  "sourcePackages": [
+    "veilbound-gs-pack1-environment.zip",
+    "veilbound-gs-pack2-characters-ui.zip"
+  ],
+  "assets": [
+    {
+      "id": "barrel_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/props/barrel_01.png",
+      "path": "assets/props/barrel_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "barrel_01"
+    },
+    {
+      "id": "crate_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/props/crate_01.png",
+      "path": "assets/props/crate_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "crate_01"
+    },
+    {
+      "id": "wood_signpost_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/props/wood_signpost_01.png",
+      "path": "assets/props/wood_signpost_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "wood_signpost_01"
+    },
+    {
+      "id": "river_bank_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/water/river_bank_01.png",
+      "path": "assets/environment/water/river_bank_01.png",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "river_bank_01"
+    },
+    {
+      "id": "river_shallow_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/water/river_shallow_01.png",
+      "path": "assets/environment/water/river_shallow_01.png",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "river_shallow_01"
+    },
+    {
+      "id": "rock_cluster_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/rocks/rock_cluster_01.png",
+      "path": "assets/environment/rocks/rock_cluster_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "rock_cluster_01"
+    },
+    {
+      "id": "boulder_moss_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/rocks/boulder_moss_01.png",
+      "path": "assets/environment/rocks/boulder_moss_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "boulder_moss_01"
+    },
+    {
+      "id": "fallen_log_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/vegetation/fallen_log_01.png",
+      "path": "assets/environment/vegetation/fallen_log_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "fallen_log_01"
+    },
+    {
+      "id": "shrub_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/vegetation/shrub_01.png",
+      "path": "assets/environment/vegetation/shrub_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "shrub_01"
+    },
+    {
+      "id": "tree_broadleaf_mature_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/vegetation/tree_broadleaf_mature_01.png",
+      "path": "assets/environment/vegetation/tree_broadleaf_mature_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "tree_broadleaf_mature_01"
+    },
+    {
+      "id": "fern_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/vegetation/fern_01.png",
+      "path": "assets/environment/vegetation/fern_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "fern_01"
+    },
+    {
+      "id": "wildflower_cluster_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/vegetation/wildflower_cluster_01.png",
+      "path": "assets/environment/vegetation/wildflower_cluster_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "wildflower_cluster_01"
+    },
+    {
+      "id": "fern_cluster_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/vegetation/fern_cluster_01.png",
+      "path": "assets/environment/vegetation/fern_cluster_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "fern_cluster_01"
+    },
+    {
+      "id": "tree_conifer_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/vegetation/tree_conifer_01.png",
+      "path": "assets/environment/vegetation/tree_conifer_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "tree_conifer_01"
+    },
+    {
+      "id": "tree_broadleaf_ancient_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/vegetation/tree_broadleaf_ancient_01.png",
+      "path": "assets/environment/vegetation/tree_broadleaf_ancient_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1792,
+      "height": 1008,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "tree_broadleaf_ancient_01"
+    },
+    {
+      "id": "timber_fence_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/infrastructure/timber_fence_01.png",
+      "path": "assets/environment/infrastructure/timber_fence_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "timber_fence_01"
+    },
+    {
+      "id": "stone_bridge_section_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/infrastructure/stone_bridge_section_01.png",
+      "path": "assets/environment/infrastructure/stone_bridge_section_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "stone_bridge_section_01"
+    },
+    {
+      "id": "leaf_litter_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/terrain/leaf_litter_01.png",
+      "path": "assets/environment/terrain/leaf_litter_01.png",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "leaf_litter_01"
+    },
+    {
+      "id": "forest_floor_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/terrain/forest_floor_01.png",
+      "path": "assets/environment/terrain/forest_floor_01.png",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "forest_floor_01"
+    },
+    {
+      "id": "dirt_path_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/terrain/dirt_path_01.png",
+      "path": "assets/environment/terrain/dirt_path_01.png",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "dirt_path_01"
+    },
+    {
+      "id": "riverford_house_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/architecture/riverford_house_01.png",
+      "path": "assets/environment/architecture/riverford_house_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "riverford_house_01"
+    },
+    {
+      "id": "riverford_market_stall_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/architecture/riverford_market_stall_01.png",
+      "path": "assets/environment/architecture/riverford_market_stall_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "riverford_market_stall_01"
+    },
+    {
+      "id": "ruin_arch_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/ruins/ruin_arch_01.png",
+      "path": "assets/environment/ruins/ruin_arch_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "ruin_arch_01"
+    },
+    {
+      "id": "ruin_wall_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/ruins/ruin_wall_01.png",
+      "path": "assets/environment/ruins/ruin_wall_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "ruin_wall_01"
+    },
+    {
+      "id": "ruin_stair_01",
+      "sourceZip": "veilbound-gs-pack1-environment.zip",
+      "originalFilename": "assets/environment/ruins/ruin_stair_01.png",
+      "path": "assets/environment/ruins/ruin_stair_01.png",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "ruin_stair_01"
+    },
+    {
+      "id": "status_bar_frame",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/ui/status_bar_frame.png",
+      "path": "assets/ui/status_bar_frame.png",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "status_bar_frame"
+    },
+    {
+      "id": "minimap_frame",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/ui/minimap_frame.png",
+      "path": "assets/ui/minimap_frame.png",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "minimap_frame"
+    },
+    {
+      "id": "hud_frame_primary",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/ui/hud_frame_primary.png",
+      "path": "assets/ui/hud_frame_primary.png",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "hud_frame_primary"
+    },
+    {
+      "id": "joystick_frame",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/ui/joystick_frame.png",
+      "path": "assets/ui/joystick_frame.png",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "joystick_frame"
+    },
+    {
+      "id": "interaction_prompt_frame",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/ui/interaction_prompt_frame.png",
+      "path": "assets/ui/interaction_prompt_frame.png",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "interaction_prompt_frame"
+    },
+    {
+      "id": "action_button_frame",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/ui/action_button_frame.png",
+      "path": "assets/ui/action_button_frame.png",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "action_button_frame"
+    },
+    {
+      "id": "sunshaft_forest_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/atmosphere/sunshaft_forest_01.png",
+      "path": "assets/atmosphere/sunshaft_forest_01.png",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "sunshaft_forest_01"
+    },
+    {
+      "id": "mist_near_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/atmosphere/mist_near_01.png",
+      "path": "assets/atmosphere/mist_near_01.png",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "mist_near_01"
+    },
+    {
+      "id": "leaf_shadow_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/atmosphere/leaf_shadow_01.png",
+      "path": "assets/atmosphere/leaf_shadow_01.png",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "leaf_shadow_01"
+    },
+    {
+      "id": "mist_distance_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/atmosphere/mist_distance_01.png",
+      "path": "assets/atmosphere/mist_distance_01.png",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "mist_distance_01"
+    },
+    {
+      "id": "floating_motes_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/atmosphere/floating_motes_01.png",
+      "path": "assets/atmosphere/floating_motes_01.png",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "floating_motes_01"
+    },
+    {
+      "id": "dire_wolf_battle_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/creatures/dire_wolf_battle_01.png",
+      "path": "assets/creatures/dire_wolf_battle_01.png",
+      "class": "battle_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "dire_wolf_battle_01"
+    },
+    {
+      "id": "shadow_wisp_battle_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/creatures/shadow_wisp_battle_01.png",
+      "path": "assets/creatures/shadow_wisp_battle_01.png",
+      "class": "battle_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "shadow_wisp_battle_01"
+    },
+    {
+      "id": "dire_wolf_exploration_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/creatures/dire_wolf_exploration_01.png",
+      "path": "assets/creatures/dire_wolf_exploration_01.png",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "dire_wolf_exploration_01"
+    },
+    {
+      "id": "companion_dog_exploration_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/creatures/companion_dog_exploration_01.png",
+      "path": "assets/creatures/companion_dog_exploration_01.png",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 1168,
+      "height": 784,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "companion_dog_exploration_01"
+    },
+    {
+      "id": "player_battle_base_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/characters/player_battle_base_01.png",
+      "path": "assets/characters/player_battle_base_01.png",
+      "class": "battle_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "player_battle_base_01"
+    },
+    {
+      "id": "npc_farmer_exploration_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/characters/npc_farmer_exploration_01.png",
+      "path": "assets/characters/npc_farmer_exploration_01.png",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "npc_farmer_exploration_01"
+    },
+    {
+      "id": "npc_townsfolk_female_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/characters/npc_townsfolk_female_01.png",
+      "path": "assets/characters/npc_townsfolk_female_01.png",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "npc_townsfolk_female_01"
+    },
+    {
+      "id": "player_exploration_base_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/characters/player_exploration_base_01.png",
+      "path": "assets/characters/player_exploration_base_01.png",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "player_exploration_base_01"
+    },
+    {
+      "id": "npc_merchant_exploration_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/characters/npc_merchant_exploration_01.png",
+      "path": "assets/characters/npc_merchant_exploration_01.png",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "npc_merchant_exploration_01"
+    },
+    {
+      "id": "player_ui_portrait_01",
+      "sourceZip": "veilbound-gs-pack2-characters-ui.zip",
+      "originalFilename": "assets/characters/player_ui_portrait_01.png",
+      "path": "assets/characters/player_ui_portrait_01.png",
+      "class": "ui_dialogue_portrait",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "width": 784,
+      "height": 1168,
+      "format": "PNG",
+      "hasAlphaChannel": false,
+      "runtimeRole": "player_ui_portrait_01"
+    }
+  ]
+}
