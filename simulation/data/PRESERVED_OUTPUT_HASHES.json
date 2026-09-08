@@ -1,0 +1,13 @@
+{
+  "source": "veilbound-working-master-v8.5-VISUAL-LOCKED",
+  "artifacts": {
+    "culture-memory-feedback-v7.9.json": {"bytes": 818753, "sha256": "fb1edcf0e34e56bd403954593fce6fedd5a2c4611075a30ce48ff99782caa5ea"},
+    "enterprise-dynasty-v8.4.json": {"bytes": 42556, "sha256": "61a89c34f2f8c9de05680dd67b3936df4fff3d31923c04015472b26f06bc3dff"},
+    "final-contract-audit-v8.2.json": {"bytes": 1143, "sha256": "3b5e34892cf52731b2671b9272ae93446ebe008f10df0f8ae95ee2aea8e1cbeb"},
+    "full-world-millennium-v8.0.json": {"bytes": 1887732, "sha256": "f24a0e75efdd2400736c3c46b68697aa9851349029cf0d4edbd79b3f0f99e123"},
+    "harker-line-v8.3.json": {"bytes": 14546, "sha256": "c8f6a4293b34fbf9ae25f37fea58271247f92cef6ce26727137b780fcd1123c3"},
+    "integrated-household-demography-v8.1-CLOSED.json": {"bytes": 1726394, "sha256": "e4090f9762269432c3d023165360bd1a9f1a2ccfd69cd3117b844bc805d39278"},
+    "integrated-household-demography-v8.1.json": {"bytes": 849636, "sha256": "d9cffd29597302943a2605d8959ee4a3a1099a69d7562591f87e78de38f3a047"}
+  },
+  "note": "These hashes are the canonical preserved output identities. The final v8.4 closed loop is runnable from source without these historical snapshot files."
+}
