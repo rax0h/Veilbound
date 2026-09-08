@@ -1,5 +1,7 @@
 # Veilbound — Clean Production Repository
 
+**New-model handoff:** read `ASTRA_HANDOFF.md` first. It defines the current authority order, live slice status, stale historical notes to ignore operationally, and the acceptance criteria for finishing Riverford Verge.
+
 Independent production restart. It does not import the rejected `veilbound1` presentation layer.
 
 ## What exists now
