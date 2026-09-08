@@ -1,6 +1,6 @@
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
-import { extname, join, normalize } from 'node:path';
+import { extname, join, normalize, relative, sep } from 'node:path';
 
 const root = process.cwd();
 const port = Number(process.env.PORT || 4173);
@@ -8,9 +8,10 @@ const types = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 
 createServer(async (request, response) => {
   try {
-    const requested = request.url === '/' ? '/index.html' : decodeURIComponent(request.url);
+    const requested = request.url === '/' ? '/index.html' : decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
     const path = normalize(join(root, requested));
-    if (!path.startsWith(root)) throw new Error('Outside repository boundary.');
+    const fromRoot = relative(root, path);
+    if (fromRoot === '..' || fromRoot.startsWith(`..${sep}`) || fromRoot.includes(`.${sep}..${sep}`)) throw new Error('Outside repository boundary.');
     await stat(path);
     response.writeHead(200, { 'content-type': types[extname(path)] || 'application/octet-stream', 'cache-control': 'no-cache' });
     response.end(await readFile(path));

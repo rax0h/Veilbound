@@ -3,27 +3,22 @@
 ## Implemented in code
 
 - Semantic dictionary indexing for 62 Essences and 7 Awakening Stones.
-- Three-base-Essence selection and deterministic Confluence generation.
-- Twenty-manifestation character contract: four Binding, sixteen Awakening, exactly one Aura.
-- Shared character engine for protagonist and important NPCs.
-- Explicit Awakening-Stone unlock state and five-slot active loadout validation.
-- Character resources, path/nature baselines, defeat state, damage and restoration primitives.
-- Coordinate-based physical movement and nearby-entity queries.
-- Deterministic world clock, save/input boundaries, and world entity collection.
-- Production visual/camera contracts and asset rejection gates.
+- Three-base-Essence selection, deterministic Confluence generation, and the twenty-manifestation character contract.
+- Shared character resources, damage/restoration primitives, coordinate movement, nearby-entity queries, deterministic world state, input, and save boundaries.
+- Production visual/camera contracts and fail-closed asset rejection gates.
 
-## Playable-slice implementation
+## Riverford Verge playable slice
 
-- Canvas-owned Riverford Verge renderer implementing `RendererContract` with elevated forward perspective, camera follow, world-space projection, depth ordering, atmosphere, and keyed compositing of the supplied black-isolated Gold Standard artwork.
-- Keyboard exploration, companion following, farmer interaction, deterministic save boundary, dire-wolf combat, defeat/continuation, and in-world strike / Binding Aura presentation.
-- All 46 files from the two Gold Standard source packages are extracted and mapped; the slice visibly uses a curated subset rather than presenting an asset gallery.
-- HUD and dialogue remain DOM overlays; the world, actors, scenery, terrain treatment, and combat effects are rendered on the game canvas.
+- A canvas renderer implements `RendererContract` with an elevated forward perspective, world-space projection, camera follow, Y/depth ordering, occlusion through painter ordering, and atmospheric layers.
+- Production PNGs use their authored alpha through normal canvas compositing; there is no DOM world compositor, black-key conversion, or asset screen-blending fallback.
+- Keyboard exploration, dog following, farmer interaction, save/restore, a continuous in-world dire-wolf encounter, defeat recovery, hit/strike feedback, and Verdant Aegis manifestation effects are wired into the slice.
+- HUD and dialogue are DOM accessibility/UI overlays. Terrain, scenery, actors, camera movement, atmosphere, and combat effects remain canvas-owned.
+- The committed manifest describes the complete archive-derived runtime set without a fixed-count gate; materialization requires exact archive membership and PNG metadata agreement.
 
-## Not implemented yet
+## Not implemented
 
-- Rigged or skeletal 3D characters, true volumetric environment meshes, or authored animation sets; current source packs provide static illustrated representations.
-- Character locomotion and combat animation frames beyond procedural movement/bob/hit/FX presentation.
-- Authored collision meshes, full navigation, audio, gamepad/touch input, and broader geographic content.
-- A final visual-fidelity acceptance pass against the approved Gold Standard target on a live browser build.
+- Rigged 3D characters, skeletal animation, volumetric meshes/materials, or authored animation sets.
+- Authored collision meshes, navigation meshes, audio, gamepad/touch input, or content beyond this compact scene.
+- Static production illustrations receive procedural locomotion bob, facing, reaction, and effects only; these are not frame or skeletal animations.
 
-Missing production art still fails closed rather than silently producing placeholder geometry or reference-board runtime fallbacks.
+Missing, unexpected, malformed, or metadata-mismatched production art fails closed rather than producing placeholders or loading reference boards at runtime.

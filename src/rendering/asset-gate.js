@@ -5,12 +5,16 @@ const FORBIDDEN_RUNTIME_PREFIXES = Object.freeze(['references/', 'visual/referen
 const FORBIDDEN_EXTENSIONS = Object.freeze(['.svg']);
 
 export function verifyProductionAssetManifest(manifest) {
+  assert(manifest?.scene === 'riverford-verge', 'Asset manifest must identify the Riverford Verge scene.');
   assert(manifest?.status === 'production', 'Asset manifest must be explicitly marked production.');
   assert(Array.isArray(manifest.assets) && manifest.assets.length > 0, 'Production manifest must contain assets.');
   for (const asset of manifest.assets) {
     assert(asset.id && asset.path && asset.class, 'Every production asset requires id, path, and class.');
     assert(asset.status === 'production', `Asset ${asset.id} is not production-approved.`);
     assert(Array.isArray(asset.referenceLineage) && asset.referenceLineage.length > 0, `Asset ${asset.id} lacks reference lineage.`);
+    assert(asset.referenceLineage.every((path) => path.startsWith('references/')), `Asset ${asset.id} has invalid reference lineage.`);
+    assert(asset.format === 'PNG' && Number.isInteger(asset.width) && Number.isInteger(asset.height), `Asset ${asset.id} lacks PNG metadata.`);
+    assert(typeof asset.hasAlphaChannel === 'boolean', `Asset ${asset.id} lacks alpha metadata.`);
     assert(!FORBIDDEN_RUNTIME_PREFIXES.some((prefix) => asset.path.startsWith(prefix)), `Asset ${asset.id} illegally loads a reference-board path.`);
     assert(!FORBIDDEN_EXTENSIONS.some((ext) => asset.path.toLowerCase().endsWith(ext)), `Asset ${asset.id} uses a forbidden placeholder/vector runtime format.`);
   }

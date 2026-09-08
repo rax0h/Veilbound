@@ -8,7 +8,7 @@ The codebase contains the closed simulation, locked semantic/visual contracts, a
 
 There is deliberately **no placeholder renderer**. Missing production art fails closed rather than falling back to flat geometry, SVG stand-ins, source boards, or the rejected top-down prototype.
 
-The Gold Standard source packs can now be run as the compact Riverford Verge slice. The runtime composes the supplied environment, character, creature, atmosphere, and UI artwork; use `npm start`, then open `http://localhost:4173`. `npm start` safely materializes and validates the runtime PNGs from the preserved source ZIPs first, keeping binary asset copies out of pull-request diffs.
+The current production archives can be run as the compact Riverford Verge slice. The perspective canvas renderer composes the environment, character, creature, atmosphere, and UI artwork with authored PNG alpha; use `npm start`, then open `http://localhost:4173`. Before serving, `npm start` safely materializes the manifest-declared runtime files, rejects unsafe or unexpected archive contents, and validates each PNG's dimensions, format, and alpha metadata.
 
 For exact implemented/not-implemented status, read `docs/IMPLEMENTATION_STATUS.md`.
 

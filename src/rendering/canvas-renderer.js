@@ -11,25 +11,6 @@ async function loadImage(path){
   return image;
 }
 
-function keyBlack(image){
-  const canvas=document.createElement('canvas');
-  canvas.width=image.naturalWidth; canvas.height=image.naturalHeight;
-  const ctx=canvas.getContext('2d',{willReadFrequently:true});
-  ctx.drawImage(image,0,0);
-  const data=ctx.getImageData(0,0,canvas.width,canvas.height);
-  const p=data.data;
-  for(let i=0;i<p.length;i+=4){
-    const max=Math.max(p[i],p[i+1],p[i+2]);
-    const min=Math.min(p[i],p[i+1],p[i+2]);
-    const luminance=(p[i]+p[i+1]+p[i+2])/3;
-    const chroma=max-min;
-    const alpha=clamp((luminance-6)*5 + chroma*1.4,0,255);
-    p[i+3]=Math.min(p[i+3],alpha);
-  }
-  ctx.putImageData(data,0,0);
-  return canvas;
-}
-
 export class RiverfordCanvasRenderer extends RendererContract {
   constructor(){
     super();
@@ -44,7 +25,7 @@ export class RiverfordCanvasRenderer extends RendererContract {
     const unique=[...new Set(assetBundle)];
     await Promise.all(unique.map(async path=>{
       const image=await loadImage(path);
-      this.images.set(path,keyBlack(image));
+      this.images.set(path,image);
     }));
     this.resize(innerWidth,innerHeight,devicePixelRatio||1);
   }
@@ -116,7 +97,7 @@ export class RiverfordCanvasRenderer extends RendererContract {
     c.translate(p.x,p.y); if(flip)c.scale(-1,1);
     c.shadowColor='rgba(0,0,0,.5)';c.shadowBlur=12*p.scale;c.shadowOffsetY=7*p.scale;
     c.drawImage(img,-targetW/2,-targetH,targetW,targetH);
-    if(flash>0){c.globalCompositeOperation='screen';c.globalAlpha=flash*.65;c.fillStyle='#eaffd1';c.fillRect(-targetW/2,-targetH,targetW,targetH)}
+    if(flash>0){c.globalAlpha=flash*.35;c.fillStyle='rgba(234,255,209,.7)';c.fillRect(-targetW/2,-targetH,targetW,targetH)}
     c.restore();
   }
 
@@ -124,7 +105,7 @@ export class RiverfordCanvasRenderer extends RendererContract {
     const c=this.ctx,w=this.width,h=this.height;
     const mist=this.images.get('assets/atmosphere/mist_near_01.png');
     if(mist){c.save();c.globalAlpha=.13;c.drawImage(mist,-w*.1,h*.63,w*1.2,h*.42);c.restore()}
-    c.save();c.globalCompositeOperation='screen';c.globalAlpha=.08;
+    c.save();c.globalAlpha=.16;
     for(let i=0;i<24;i++){const x=(i*173+time*.012)%(w+120)-60;const y=h*.28+((i*97)%Math.floor(h*.62));c.fillStyle='#f0e5bd';c.beginPath();c.arc(x,y,1+(i%3)*.6,0,Math.PI*2);c.fill()}
     c.restore();
   }
@@ -139,7 +120,7 @@ export class RiverfordCanvasRenderer extends RendererContract {
     }
     if(fx.slashUntil>time&&frame.wolf.alive){
       const a=this.project(frame.player.transform.x,frame.player.transform.z,.9),b=this.project(frame.wolf.transform.x,frame.wolf.transform.z,.8);
-      c.save();c.globalCompositeOperation='screen';c.strokeStyle='rgba(238,244,206,.8)';c.lineWidth=4;c.beginPath();c.moveTo(a.x,a.y-30);c.quadraticCurveTo((a.x+b.x)/2,b.y-70,b.x,b.y-24);c.stroke();c.restore();
+      c.save();c.strokeStyle='rgba(238,244,206,.8)';c.lineWidth=4;c.beginPath();c.moveTo(a.x,a.y-30);c.quadraticCurveTo((a.x+b.x)/2,b.y-70,b.x,b.y-24);c.stroke();c.restore();
     }
   }
 
