@@ -2,18 +2,23 @@
 
 ## Runnable now
 - Final closed-loop v8.4 simulator source
-- Eight-world / 1,000-year rerun harness
-- v8.4 closure record and locked state
-- Preserved historical simulation source/data/docs/tests packaged in `archive/simulation_text.tar.gz`
-- Preserved clean production source/tests/tools packaged in `archive/production_text.tar.gz`
-- Hydration tool: `python tools/hydrate_preserved_sources.py`
+- Eight-world / 1,000-year rerun harness: `python simulation/run_closed_suite.py`
+- All preserved simulator source modules from v7.6 through v8.4
+- All preserved verifier scripts from v7.6 through v8.4
+- Closed-state/closure documentation, changelog, Harker chronicle, and v8.2 contract audit
+- Locked v8.5 visual constitution, reference catalog, proof scene contract, visual verifier, schema, and v8.5 state
+- Clean production source foundation, tests, rendering/asset contracts, save/input/world/combat/character systems
 
-## Commands
-- Run final closed loop: `python simulation/run_closed_suite.py`
-- Hydrate all preserved text sources/data/tests into the working tree: `python tools/hydrate_preserved_sources.py`
+## Verified final simulation command
+`python simulation/run_closed_suite.py`
 
-## Still not physically migrated
-- v8.5 binary visual reference images
+The final v8.4 closed-loop suite was reproduced from the preserved source and matched the locked eight-world / 1,000-year acceptance summary.
+
+## Preserved source artifacts still not physically in GitHub
+These are not required to run the final closed-loop simulation:
+- canonical 62-Essence semantic dictionary JSON (`canon/semantic-dictionary-v0.1.json`)
+- six large historical result snapshots: v7.9, v8.0, both v8.1 snapshots, v8.3, and v8.4
+- 13 v8.5 binary visual reference images
 - GS001–GS003 PNG production assets
 
-Those binary visual assets are not required to run the closed-loop simulation.
+The v7.6–v7.8 result JSONs were not present in the preserved closed-source package itself; their simulator source and verifier scripts are preserved.
