@@ -8,6 +8,8 @@ The codebase contains the closed simulation, locked semantic/visual contracts, a
 
 There is deliberately **no placeholder renderer**. Missing production art fails closed rather than falling back to flat geometry, SVG stand-ins, source boards, or the rejected top-down prototype.
 
+The Gold Standard source packs can now be run as the compact Riverford Verge slice. The runtime composes the supplied environment, character, creature, atmosphere, and UI artwork; use `npm start`, then open `http://localhost:4173`. `npm start` safely crops, removes connected black isolation backgrounds, and validates transparent runtime PNGs from the preserved source ZIPs first, keeping binary outputs out of pull-request diffs. Desktop uses keyboard controls; touch layouts expose an analog Pointer Events joystick plus interaction, strike, and manifestation controls.
+
 For exact implemented/not-implemented status, read `docs/IMPLEMENTATION_STATUS.md`.
 
 ## Visual rule
@@ -19,6 +21,7 @@ For exact implemented/not-implemented status, read `docs/IMPLEMENTATION_STATUS.m
 ```bash
 npm test
 npm run verify
+npm run verify:slice
 ```
 
 The first visual runtime is allowed only after a real production scene asset bundle passes the asset gate and can be compared against `references/reference-zero.png` without obviously violating the locked visual constitution.

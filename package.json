@@ -5,6 +5,11 @@
   "type": "module",
   "description": "Clean production codebase for Veilbound. No rejected prototype renderer or placeholder art.",
   "scripts": {
+    "assets:materialize": "python tools/materialize-gold-standard-assets.py",
+    "prestart": "npm run assets:materialize",
+    "start": "node tools/serve-slice.mjs",
+    "check:slice": "node tools/check-playable-slice.mjs",
+    "verify:slice": "npm run assets:materialize && npm run check:slice && npm test && npm run verify",
     "materialize:canon": "python tools/materialize-canon.py",
     "materialize:references": "python tools/materialize-references.py",
     "pretest": "python tools/materialize-canon.py",
