@@ -9,7 +9,7 @@ Preserve the migrated v8.4 closed simulation exactly as source-of-truth material
 Do not replace these systems with a simplified mock. Run the included verification scripts after migration.
 
 ## Visual-locked master
-Preserve the v8.5 visual constitution, reference set, manifest/schema, state, and anti-drift verifier. `visual/references/reference-zero.png` is the north-star reference and `visual/VISUAL_CONSTITUTION.md` is a contract, not a mood board.
+Preserve the v8.5 visual constitution, reference set, manifest/schema, state, and anti-drift verifier. `visual/references/reference-zero.png` is the north-star reference and `docs/VISUAL_CONSTITUTION.md` is a contract, not a mood board.
 
 Core rules:
 - premium illustrated fantasy realism / stylized realism
@@ -40,18 +40,17 @@ Non-negotiable:
 - reference boards are references only
 - composed screenshots are not substitutes for world assets
 - isolated runtime assets should be clean and transparent where appropriate
-- never call an asset complete unless the file actually exists
+- never call an asset complete unless the file actually exists under `assets/`
 - do not silently substitute placeholders or low-resolution crops
 
 The ordered list is in `docs/GOLD_STANDARD_ASSET_MANIFEST.md`.
 
 Current accepted progress:
-- GS001 complete
-- GS002 complete
-- GS003 complete
-- next is GS004
+- GS001 `tree_broadleaf_ancient_01.png` — in progress
+- GS002 not started
+- GS003 not started
 
-Continue strictly one at a time from GS004 unless the user changes the instruction. After each asset, state what it is and its exact repository path.
+Continue strictly one at a time from GS001 unless the user changes the instruction. After each asset, state what it is and its exact repository path.
 
 ## Rejected direction
 Do not import/revive the old `rax0h/veilbound1` presentation or its crude browser prototype as the production visual foundation.
