@@ -20,7 +20,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "barrel_01"
     },
     {
@@ -36,7 +36,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "crate_01"
     },
     {
@@ -52,7 +52,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "wood_signpost_01"
     },
     {
@@ -68,7 +68,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "river_bank_01"
     },
     {
@@ -84,7 +84,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "river_shallow_01"
     },
     {
@@ -100,7 +100,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "rock_cluster_01"
     },
     {
@@ -116,7 +116,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "boulder_moss_01"
     },
     {
@@ -132,7 +132,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "fallen_log_01"
     },
     {
@@ -148,7 +148,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "shrub_01"
     },
     {
@@ -164,7 +164,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "tree_broadleaf_mature_01"
     },
     {
@@ -180,7 +180,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "fern_01"
     },
     {
@@ -196,7 +196,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "wildflower_cluster_01"
     },
     {
@@ -212,7 +212,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "fern_cluster_01"
     },
     {
@@ -228,7 +228,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "tree_conifer_01"
     },
     {
@@ -244,7 +244,7 @@
       "width": 1792,
       "height": 1008,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "tree_broadleaf_ancient_01"
     },
     {
@@ -260,7 +260,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "timber_fence_01"
     },
     {
@@ -276,7 +276,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "stone_bridge_section_01"
     },
     {
@@ -292,7 +292,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "leaf_litter_01"
     },
     {
@@ -308,7 +308,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "forest_floor_01"
     },
     {
@@ -324,7 +324,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "dirt_path_01"
     },
     {
@@ -340,7 +340,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "riverford_house_01"
     },
     {
@@ -356,7 +356,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "riverford_market_stall_01"
     },
     {
@@ -372,7 +372,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "ruin_arch_01"
     },
     {
@@ -388,7 +388,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "ruin_wall_01"
     },
     {
@@ -404,7 +404,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "ruin_stair_01"
     },
     {
@@ -420,7 +420,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "status_bar_frame"
     },
     {
@@ -436,7 +436,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "minimap_frame"
     },
     {
@@ -452,7 +452,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "hud_frame_primary"
     },
     {
@@ -468,7 +468,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "joystick_frame"
     },
     {
@@ -484,7 +484,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "interaction_prompt_frame"
     },
     {
@@ -500,7 +500,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "action_button_frame"
     },
     {
@@ -516,7 +516,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "sunshaft_forest_01"
     },
     {
@@ -532,7 +532,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "mist_near_01"
     },
     {
@@ -548,7 +548,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "leaf_shadow_01"
     },
     {
@@ -564,7 +564,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "mist_distance_01"
     },
     {
@@ -580,7 +580,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "floating_motes_01"
     },
     {
@@ -596,7 +596,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "dire_wolf_battle_01"
     },
     {
@@ -612,7 +612,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "shadow_wisp_battle_01"
     },
     {
@@ -628,7 +628,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "dire_wolf_exploration_01"
     },
     {
@@ -644,7 +644,7 @@
       "width": 1168,
       "height": 784,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "companion_dog_exploration_01"
     },
     {
@@ -660,7 +660,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "player_battle_base_01",
       "characterId": "player"
     },
@@ -677,7 +677,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "npc_farmer_exploration_01"
     },
     {
@@ -693,7 +693,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "npc_townsfolk_female_01"
     },
     {
@@ -709,7 +709,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "player_exploration_base_01",
       "characterId": "player"
     },
@@ -726,7 +726,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "npc_merchant_exploration_01"
     },
     {
@@ -742,7 +742,7 @@
       "width": 784,
       "height": 1168,
       "format": "PNG",
-      "hasAlphaChannel": false,
+      "hasAlphaChannel": true,
       "runtimeRole": "player_ui_portrait_01",
       "characterId": "player"
     }
