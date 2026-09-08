@@ -14,7 +14,7 @@ export function verifyProductionAssetManifest(manifest) {
     assert(Array.isArray(asset.referenceLineage) && asset.referenceLineage.length > 0, `Asset ${asset.id} lacks reference lineage.`);
     assert(asset.referenceLineage.every((path) => path.startsWith('references/')), `Asset ${asset.id} has invalid reference lineage.`);
     assert(asset.format === 'PNG' && Number.isInteger(asset.width) && Number.isInteger(asset.height), `Asset ${asset.id} lacks PNG metadata.`);
-    assert(typeof asset.hasAlphaChannel === 'boolean', `Asset ${asset.id} lacks alpha metadata.`);
+    assert(asset.hasAlphaChannel === true, `Asset ${asset.id} must use authored PNG transparency.`);
     assert(!FORBIDDEN_RUNTIME_PREFIXES.some((prefix) => asset.path.startsWith(prefix)), `Asset ${asset.id} illegally loads a reference-board path.`);
     assert(!FORBIDDEN_EXTENSIONS.some((ext) => asset.path.toLowerCase().endsWith(ext)), `Asset ${asset.id} uses a forbidden placeholder/vector runtime format.`);
   }
