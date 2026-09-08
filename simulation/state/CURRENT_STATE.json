@@ -1,6 +1,6 @@
 {
-  "master_revision": "8.4-enterprise-wealth-dynasty-CLOSED",
-  "status": "PREPRODUCTION_SIMULATION_CORE_CLOSED",
+  "master_revision": "8.5-visual-constitution-LOCKED",
+  "status": "PREPRODUCTION_VISUAL_CONSTITUTION_LOCKED",
   "production_code_started": false,
   "hard_canon": {
     "manifestations": 20,
@@ -29,7 +29,11 @@
     "explicit household demography",
     "final integrated source-contract audit",
     "relevance scaling equivalence",
-    "enterprise -> wealth -> dynasty emergence/dissolution"
+    "enterprise -> wealth -> dynasty emergence/dissolution",
+    "visual reference immutability",
+    "visual constitution anti-drift contract",
+    "camera/player-scale contract",
+    "reference-lineage asset gate"
   ],
   "acceptance": {
     "source_contracts": "18/18",
@@ -38,7 +42,16 @@
     "forbidden_average_approximation_detected": "100/100"
   },
   "current_blocker": {
-    "name": "visual pipeline proof before production implementation",
-    "rule": "simulation verification requested before visuals is complete; prove Visual Bible + gold-standard camera/environment/character-scale pipeline before production game programming."
+    "name": "gold-standard interactive scene under locked visual pipeline",
+    "rule": "Production implementation may begin only through the locked visual gate; no asset or scene may ship without explicit reference lineage and visual-contract compliance."
+  },
+  "visual_gate": {
+    "version": "1.0",
+    "status": "LOCKED",
+    "reference_count": 13,
+    "north_star": "visual/references/reference-zero.png",
+    "camera": "elevated_forward_three_quarter",
+    "player_screen_height": "10-14%",
+    "anti_drift_verifier": "tests/verify_visual_gate_v8_5.py"
   }
 }

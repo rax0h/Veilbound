@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "authority": "LOCKED_SOURCE_MATERIAL",
+  "references": [
+    {"file":"visual/references/122BA626-57C1-416B-8D56-C17AA0164261.jpeg","sha256":"5ab93a05f78cbae057965e98369d9b68772fbecab647e036537aa5351d3349f4","width":1536,"height":1024,"roles":["environment_family","settlement_family","architecture","world_scale"]},
+    {"file":"visual/references/759011B5-E68D-40D4-BE7B-75C3AD8FAB9B.jpeg","sha256":"8d879a6ee111123400e9e411fa81df0eb1cda4ca1a33cb759d77070e82a3a7ca","width":1536,"height":1024,"roles":["environment_family","settlement_family","biome_range","world_scale"]},
+    {"file":"visual/references/97FF1292-6565-48D7-8817-B6E6E30A5A12.jpeg","sha256":"84a00a47096e6da2b7f7219ff6d257c3c99e371a2cfff750c5638a7a97a4666c","width":1536,"height":1024,"roles":["gameplay_ui","inventory","character_sheet","world_map","hud"]},
+    {"file":"visual/references/3C342042-7774-43D0-8EAD-A3E896CC75A6.jpeg","sha256":"f8b92d416db367c5271b9d72c7fb256f630f24c22ebf08abba698ae727bba597","width":1536,"height":1024,"roles":["magic_vfx","manifestations","essence_language","combat_vfx"]},
+    {"file":"visual/references/0F563008-2F19-4A8C-AE3D-F1B74C53A1EA.jpeg","sha256":"886ea0b85f95ee296d3675595192edfde065defab634b424c7e63c028b8a9356","width":1536,"height":1024,"roles":["portraits","faces","character_identity","dialogue"]},
+    {"file":"visual/references/F1124293-3567-4205-9B4A-0A03BFB5A5AB.jpeg","sha256":"f16c6f1f7b97433d0b16f1765b6fc706d928b23465cd8626c5189d9560dce507","width":1536,"height":1024,"roles":["equipment","weapons","armor","crafting","loot"]},
+    {"file":"visual/references/4D15456C-024D-4B7B-A855-BE7559EA1AC1.jpeg","sha256":"eee9ff46bc4965a1b1848b7045518df753d1bf6acc8a1c36871c640881a4bfa6","width":1536,"height":864,"roles":["hero_exploration","camera","player_scale","world_dominance"]},
+    {"file":"visual/references/E8587A72-9DD7-4C74-8AF7-1C872F81E0EA.jpeg","sha256":"68732dfceb2b789217c72956808b07624c35b53ffe950818e9929c69ea283959","width":1536,"height":1024,"roles":["architecture","settlement_props","materials","vegetation"]},
+    {"file":"visual/references/9AE8741A-0A7C-4CB1-A117-EFB62D41B288.jpeg","sha256":"35c0cb36c76d49a89d7d8ded21997c71cdc5960ce47df6e247fa9c696bc6d492","width":1536,"height":1024,"roles":["characters","npc_population","battle_bodies","portrait_families"]},
+    {"file":"visual/references/0386ABFF-4F84-4A57-ADFD-59656C4AA317.jpeg","sha256":"1ffa42e09068d7f5cd38036939bf44ecec8b315a8c4d8682ff833b83f70b0c44","width":1536,"height":1024,"roles":["asset_browser","production_assets","characters","props","vfx"]},
+    {"file":"visual/references/F3919F6E-84E7-44C8-A12C-C7DBD7B6B2DA.jpeg","sha256":"35be3709130d7584e0cd6f65f93562657cfd74808d281c722803a6aee94b169e","width":1536,"height":707,"roles":["interactive_gameplay","mobile_hud","exploration_camera","lighting"]},
+    {"file":"visual/references/2AB22225-5E5C-4379-92FC-A30314B9787D.jpeg","sha256":"ae1d3a9f88e83539396fade3e8034ef2e92b59d6214ea33128b5ab0e04e93c71","width":1536,"height":1024,"roles":["creatures","companions","characters","resources","essences"]},
+    {"file":"visual/references/reference-zero.png","sha256":"c698a29f5abc811fc43d07b48024f82f598bc1f3820bfbca57b352f22f8d7361","width":1536,"height":1024,"roles":["north_star","camera","environment","character_scale","lighting","composition"]}
+  ]
+}

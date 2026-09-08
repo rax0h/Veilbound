@@ -1,0 +1,28 @@
+{
+  "id": "gold_standard_exploration_scene_v1",
+  "status": "production_pipeline_proof",
+  "placeholder": false,
+  "asset_class": "environment",
+  "reference_lineage": [
+    "visual/references/reference-zero.png",
+    "visual/references/4D15456C-024D-4B7B-A855-BE7559EA1AC1.jpeg",
+    "visual/references/F3919F6E-84E7-44C8-A12C-C7DBD7B6B2DA.jpeg",
+    "visual/references/122BA626-57C1-416B-8D56-C17AA0164261.jpeg"
+  ],
+  "camera": {
+    "mode": "elevated_forward_three_quarter",
+    "player_screen_height": 0.12,
+    "world_dominant": true,
+    "depth_planes_min": 3
+  },
+  "required_scene_traits": [
+    "foreground framing",
+    "navigable midground",
+    "distant landmark",
+    "material-rich terrain",
+    "atmospheric perspective",
+    "directional cinematic light",
+    "readable player silhouette",
+    "minimal translucent mobile HUD"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "status": "LOCKED",
+  "authority": "Source reference images + Reference Zero",
+  "north_star": "visual/references/reference-zero.png",
+  "non_negotiables": {
+    "style": ["premium illustrated fantasy realism", "stylized realism", "painterly material detail", "cinematic atmosphere"],
+    "world_priority": "world-dominant; landscape and architecture carry the frame",
+    "camera": {
+      "mode": "elevated_forward_three_quarter",
+      "projection_feel": "third-person/isometric-adjacent but perspective-rich, never flat orthographic",
+      "player_screen_height_min": 0.10,
+      "player_screen_height_max": 0.14,
+      "forward_world_visibility": "high",
+      "horizon_depth": "multi-plane atmospheric perspective"
+    },
+    "environment": {
+      "requirements": ["layered terrain", "credible architecture", "dense but readable vegetation", "material variation", "atmospheric depth", "volumetric light or equivalent painterly shafts", "weatherable surfaces", "foreground/midground/background separation"],
+      "beauty_before_darkness": true
+    },
+    "characters": {
+      "proportions": "grounded adult human proportions unless creature/species canon says otherwise",
+      "readability": ["clear silhouette", "rim/value separation when background demands it", "class/equipment identity readable at gameplay scale"],
+      "asset_separation": ["exploration_body", "battle_body", "ui_dialogue_portrait"]
+    },
+    "creatures": {
+      "requirements": ["anatomical credibility", "specific material/fur/scale treatment", "silhouette-first readability", "world-integrated coloration"]
+    },
+    "lighting": {
+      "requirements": ["warm/cool separation where appropriate", "directional key light", "atmospheric occlusion", "depth haze", "localized magical emissive light without neon wash"]
+    },
+    "ui": {
+      "requirements": ["restrained ornate fantasy", "dark translucent or material-backed surfaces", "fine gold/bronze accents", "serif display language", "high legibility", "world remains visible whenever possible"],
+      "mobile": "controls may be minimal translucent overlays; no giant flat gray slabs"
+    }
+  },
+  "forbidden": [
+    "flat vector village art",
+    "primitive geometric placeholder environments presented as final",
+    "chibi or toy-like player proportions",
+    "generic mobile-game asset-pack look",
+    "flat orthographic camera",
+    "single-plane backgrounds without depth",
+    "solid black rectangular HUD boxes dominating the screen",
+    "portrait stretched into gameplay sprite",
+    "one character image reused for exploration battle and dialogue",
+    "untextured geometry presented as production art",
+    "neon-everywhere magical effects",
+    "low-detail silhouettes that cannot survive comparison with source references"
+  ],
+  "acceptance": {
+    "reference_lineage_required": true,
+    "placeholder_flag_must_be_false": true,
+    "separate_character_asset_classes_required": true,
+    "camera_contract_required": true,
+    "visual_review": "A functional asset that violates this constitution fails production acceptance."
+  }
+}
