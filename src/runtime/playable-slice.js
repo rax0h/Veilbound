@@ -25,10 +25,12 @@ await renderer.initialize($('#gameCanvas'),assets);
 
 let inCombat=false,last=performance.now(),enemyTimer=0,enemyPhase=0;
 const fx={aegisUntil:0,slashUntil:0,impactUntil:0,cameraKickUntil:0};
+const touchMove={x:0,y:0};
+
 function refreshHud(){
   $('#hpbar').style.width=100*player.resources.hp/player.resources.max.hp+'%';$('#php').textContent=player.resources.hp;$('#whp').textContent=wolf.resources.hp;
   const nearFarmer=distance(player,farmer)<3.5,nearWolf=wolf.alive&&distance(player,wolf)<4.2;
-  $('#prompt').hidden=(!nearFarmer&&!nearWolf)||inCombat;$('#promptText').textContent=nearFarmer?'E · Speak with Elian':'E · Confront the dire wolf';
+  $('#prompt').hidden=(!nearFarmer&&!nearWolf)||inCombat;$('#promptText').textContent=nearFarmer?'Speak with Elian':'Confront the dire wolf';
   $('#combatHud').hidden=!inCombat;
 }
 function interact(){if(inCombat)return;if(distance(player,farmer)<3.5){$('#dialogue').hidden=false;return}if(wolf.alive&&distance(player,wolf)<4.2)startCombat()}
@@ -57,13 +59,28 @@ function cast(){if(!inCombat)return;fx.aegisUntil=performance.now()+1100;$('#com
 function endCombat(){inCombat=false;clearInterval(enemyTimer);Object.assign(wolf.velocity,{x:0,z:0});refreshHud()}
 function save(){localStorage.setItem('veilbound.slice.save',JSON.stringify({position:player.transform,hp:player.resources.hp,wolfAlive:wolf.alive}));$('#save').textContent='JOURNEY SAVED';setTimeout(()=>$('#save').textContent='SAVE JOURNEY',1200)}
 const saved=JSON.parse(localStorage.getItem('veilbound.slice.save')||'null');if(saved){Object.assign(player.transform,saved.position);player.resources.hp=saved.hp;if(saved.wolfAlive===false)wolf.alive=false}
+
 addEventListener('keydown',e=>{keys.add(e.key.toLowerCase());if(e.key.toLowerCase()==='e'){$('#dialogue').hidden?interact():$('#dialogue').hidden=true}if(e.code==='Space'){e.preventDefault();strike()}if(e.key.toLowerCase()==='q')cast();if(e.key==='Escape'){$('#dialogue').hidden=true;endCombat()}});addEventListener('keyup',e=>keys.delete(e.key.toLowerCase()));
 addEventListener('resize',()=>renderer.resize(innerWidth,innerHeight,devicePixelRatio||1));
 $('#closeDialogue').onclick=()=>$('#dialogue').hidden=true;$('#attack').onclick=()=>strike();$('#cast').onclick=cast;$('#flee').onclick=endCombat;$('#save').onclick=save;
+$('#touchStrike').onclick=()=>strike();$('#touchAegis').onclick=()=>cast();$('#touchInteract').onclick=()=>{$('#dialogue').hidden?interact():$('#dialogue').hidden=true};
+
+const stick=$('#touchStick'),knob=$('#touchStickKnob');
+function updateStick(clientX,clientY){
+  const r=stick.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,dx=clientX-cx,dy=clientY-cy,max=r.width*.34,len=Math.hypot(dx,dy)||1,scale=Math.min(1,max/len),px=dx*scale,py=dy*scale;
+  knob.style.transform=`translate(calc(-50% + ${px}px),calc(-50% + ${py}px))`;
+  const mag=Math.min(1,Math.hypot(px,py)/max);touchMove.x=mag<.12?0:px/max;touchMove.y=mag<.12?0:-py/max;
+}
+stick.addEventListener('pointerdown',e=>{stick.setPointerCapture(e.pointerId);updateStick(e.clientX,e.clientY)});
+stick.addEventListener('pointermove',e=>{if(stick.hasPointerCapture(e.pointerId))updateStick(e.clientX,e.clientY)});
+function releaseStick(e){if(stick.hasPointerCapture?.(e.pointerId))stick.releasePointerCapture(e.pointerId);touchMove.x=0;touchMove.y=0;knob.style.transform='translate(-50%,-50%)'}
+stick.addEventListener('pointerup',releaseStick);stick.addEventListener('pointercancel',releaseStick);
+
 function frame(now){
   const dt=Math.min(.04,(now-last)/1000);last=now;
   if(!inCombat&&$('#dialogue').hidden){
-    const x=(keys.has('d')||keys.has('arrowright')?1:0)-(keys.has('a')||keys.has('arrowleft')?1:0),y=(keys.has('w')||keys.has('arrowup')?1:0)-(keys.has('s')||keys.has('arrowdown')?1:0);
+    const keyX=(keys.has('d')||keys.has('arrowright')?1:0)-(keys.has('a')||keys.has('arrowleft')?1:0),keyY=(keys.has('w')||keys.has('arrowup')?1:0)-(keys.has('s')||keys.has('arrowdown')?1:0);
+    const x=Math.abs(touchMove.x)>.01?touchMove.x:keyX,y=Math.abs(touchMove.y)>.01?touchMove.y:keyY;
     const before={x:player.transform.x,z:player.transform.z};moveCharacter(player,{x,y},dt,4.25);player.transform.x=Math.max(-15,Math.min(17,player.transform.x));player.transform.z=Math.max(-4,Math.min(19,player.transform.z));
     const blocked=(player.transform.x>7.2&&player.transform.x<13.5&&player.transform.z>29)||(player.transform.x>9.3&&player.transform.z>17&&player.transform.z<33);
     if(blocked){player.transform.x=before.x;player.transform.z=before.z;player.velocity.x=0;player.velocity.z=0}
