@@ -82,7 +82,7 @@ export class RiverfordCanvasRenderer extends RendererContract {
     sprites.sort((a,b)=>(b.kind==='actor'?b.actor.transform.z:b.z)-(a.kind==='actor'?a.actor.transform.z:a.z));
     for(const item of sprites){
       if(item.kind==='scenery')this.drawSprite(item.path,item.x,item.z,item.size,{alpha:item.alpha??1,flip:item.flip});
-      else{const a=item.actor,moving=Math.hypot(a.velocity?.x||0,a.velocity?.z||0)>.05,bob=moving?Math.sin(time*.013+a.id.length)*.05:0;this.drawSprite(a.sprite,a.transform.x,a.transform.z,a.size,{bob,flip:(a.velocity?.x||0)<-.01,flash:(a.hitUntil||0)>time?.75:0})}
+      else{const a=item.actor,moving=Math.hypot(a.velocity?.x||0,a.velocity?.z||0)>.05,bob=moving?Math.sin(time*.013+a.id.length)*.05:0;this.drawSprite(a.sprite,a.transform.x,a.transform.z,a.size,{bob,flip:(a.velocity?.x||0)<-.01,flash:(a.hitUntil||0)>time?0.75:0})}
     }
     this.drawFx(frame,time);this.drawAtmosphere(time);c.restore();
   }
