@@ -14,13 +14,16 @@
 
 ## Playable-slice implementation
 
-- Browser DOM/CSS production-art compositor for the Riverford Verge scene.
-- Keyboard exploration, companion following, farmer interaction, deterministic save boundary, dire-wolf combat, defeat/continuation, and one Binding Aura presentation.
+- Canvas-owned Riverford Verge renderer implementing `RendererContract` with elevated forward perspective, camera follow, world-space projection, depth ordering, atmosphere, and keyed compositing of the supplied black-isolated Gold Standard artwork.
+- Keyboard exploration, companion following, farmer interaction, deterministic save boundary, dire-wolf combat, defeat/continuation, and in-world strike / Binding Aura presentation.
 - All 46 files from the two Gold Standard source packages are extracted and mapped; the slice visibly uses a curated subset rather than presenting an asset gallery.
+- HUD and dialogue remain DOM overlays; the world, actors, scenery, terrain treatment, and combat effects are rendered on the game canvas.
 
 ## Not implemented yet
 
-- Character locomotion and combat animation frames beyond the supplied static representations.
-- Audio, gamepad/touch input, authored collision meshes, and broader geographic content.
+- Rigged or skeletal 3D characters, true volumetric environment meshes, or authored animation sets; current source packs provide static illustrated representations.
+- Character locomotion and combat animation frames beyond procedural movement/bob/hit/FX presentation.
+- Authored collision meshes, full navigation, audio, gamepad/touch input, and broader geographic content.
+- A final visual-fidelity acceptance pass against the approved Gold Standard target on a live browser build.
 
-The renderer has no primitive fallback: missing production art continues to fail closed rather than silently producing placeholder geometry.
+Missing production art still fails closed rather than silently producing placeholder geometry or reference-board runtime fallbacks.
