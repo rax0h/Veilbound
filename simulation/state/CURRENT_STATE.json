@@ -1,0 +1,44 @@
+{
+  "master_revision": "8.4-enterprise-wealth-dynasty-CLOSED",
+  "status": "PREPRODUCTION_SIMULATION_CORE_CLOSED",
+  "production_code_started": false,
+  "hard_canon": {
+    "manifestations": 20,
+    "exactly_one_aura": true,
+    "max_society_stars": 3,
+    "generic_xp": false,
+    "codename_not_final": true,
+    "tagline": false,
+    "aggregate_characters_not_rules": true
+  },
+  "latest_test": {
+    "runs": 8,
+    "new_money_dynasties": [3, 3, 6, 9, 1, 5, 4, 2],
+    "old_house_dynasties": [3, 4, 9, 6, 3, 5, 8, 1],
+    "business_created_dynasties": [3, 3, 6, 9, 1, 5, 4, 2],
+    "collapsed_once_wealthy": [2, 3, 1, 1, 2, 1, 1, 0],
+    "runs_with_new_business_dynasty": 8,
+    "runs_with_old_house_survival": 8,
+    "runs_with_wealthy_collapse": 7,
+    "max_rank_observed": 3,
+    "max_wealth_observed": 45909.2,
+    "longest_business_observed": 1000
+  },
+  "closed_gates": [
+    "millennium integration",
+    "explicit household demography",
+    "final integrated source-contract audit",
+    "relevance scaling equivalence",
+    "enterprise -> wealth -> dynasty emergence/dissolution"
+  ],
+  "acceptance": {
+    "source_contracts": "18/18",
+    "relevance_transitions": "8,000,000",
+    "relevance_failures": 0,
+    "forbidden_average_approximation_detected": "100/100"
+  },
+  "current_blocker": {
+    "name": "visual pipeline proof before production implementation",
+    "rule": "simulation verification requested before visuals is complete; prove Visual Bible + gold-standard camera/environment/character-scale pipeline before production game programming."
+  }
+}
