@@ -1,0 +1,36 @@
+{
+  "revision": "8.2-final-contract-audit",
+  "source_contracts": {
+    "explicit_people": true,
+    "partner_identity": true,
+    "cross_region_matching": true,
+    "marriage_migration": true,
+    "double_buffered_intent": true,
+    "widowhood_remarriage": true,
+    "fatal_population_conservation": true,
+    "same_population_magic": true,
+    "twenty_manifestations": true,
+    "society_star_cap": true,
+    "diamond_no_old_age": true,
+    "persistent_objects": true,
+    "monster_surges": true,
+    "surge_memory": true,
+    "missions_can_fail": true,
+    "culture_chain": true,
+    "no_population_floor": true,
+    "no_generic_xp": true
+  },
+  "source_contracts_passed": 18,
+  "source_contracts_total": 18,
+  "relevance_scaling": {
+    "runs": 8,
+    "characters_per_run": 5000,
+    "ticks_per_run": 200,
+    "character_transitions_checked": 8000000,
+    "valid_runs": 8,
+    "hard_failures": 0,
+    "mean_compression_ratio": 38.78,
+    "final_cohort_counts": [218,211,217,216,214,214,217,217]
+  },
+  "forbidden_average_detection": {"tests": 100,"detected": 100}
+}
