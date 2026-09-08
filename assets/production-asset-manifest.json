@@ -1,0 +1,1574 @@
+{
+  "version": 1,
+  "status": "production",
+  "sourcePackages": [
+    "veilbound-gs-pack1-environment.zip",
+    "veilbound-gs-pack2-characters-ui.zip"
+  ],
+  "assets": [
+    {
+      "id": "barrel_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "barrel_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/props/barrel_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          136,
+          195,
+          651,
+          949
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/props/barrel_01.png",
+        "width": 515,
+        "height": 754,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "prop"
+    },
+    {
+      "id": "crate_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "crate_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/props/crate_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          66,
+          280,
+          724,
+          868
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/props/crate_01.png",
+        "width": 658,
+        "height": 588,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "prop"
+    },
+    {
+      "id": "wood_signpost_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "wood_signpost_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/props/wood_signpost_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          143,
+          164,
+          624,
+          1029
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/props/wood_signpost_01.png",
+        "width": 481,
+        "height": 865,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "prop"
+    },
+    {
+      "id": "river_bank_01",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "river_bank_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/water/river_bank_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          16,
+          179,
+          1154,
+          640
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/water/river_bank_01.png",
+        "width": 1138,
+        "height": 461,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "terrain"
+    },
+    {
+      "id": "river_shallow_01",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "river_shallow_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/water/river_shallow_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          64,
+          196,
+          1113,
+          619
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/water/river_shallow_01.png",
+        "width": 1049,
+        "height": 423,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "terrain"
+    },
+    {
+      "id": "rock_cluster_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "rock_cluster_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/rocks/rock_cluster_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          207,
+          146,
+          960,
+          638
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/rocks/rock_cluster_01.png",
+        "width": 753,
+        "height": 492,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "character"
+    },
+    {
+      "id": "boulder_moss_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "boulder_moss_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/rocks/boulder_moss_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          196,
+          114,
+          980,
+          707
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/rocks/boulder_moss_01.png",
+        "width": 784,
+        "height": 593,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "character"
+    },
+    {
+      "id": "fallen_log_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "fallen_log_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/vegetation/fallen_log_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          67,
+          156,
+          1119,
+          613
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/vegetation/fallen_log_01.png",
+        "width": 1052,
+        "height": 457,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "foliage"
+    },
+    {
+      "id": "shrub_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "shrub_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/vegetation/shrub_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          176,
+          58,
+          986,
+          739
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/vegetation/shrub_01.png",
+        "width": 810,
+        "height": 681,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "foliage"
+    },
+    {
+      "id": "tree_broadleaf_mature_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "tree_broadleaf_mature_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/vegetation/tree_broadleaf_mature_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          212,
+          33,
+          968,
+          764
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/vegetation/tree_broadleaf_mature_01.png",
+        "width": 756,
+        "height": 731,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "foliage"
+    },
+    {
+      "id": "fern_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "fern_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/vegetation/fern_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          67,
+          166,
+          713,
+          1033
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/vegetation/fern_01.png",
+        "width": 646,
+        "height": 867,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "foliage"
+    },
+    {
+      "id": "wildflower_cluster_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "wildflower_cluster_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/vegetation/wildflower_cluster_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          100,
+          295,
+          664,
+          972
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/vegetation/wildflower_cluster_01.png",
+        "width": 564,
+        "height": 677,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "foliage"
+    },
+    {
+      "id": "fern_cluster_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "fern_cluster_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/vegetation/fern_cluster_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          267,
+          67,
+          892,
+          689
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/vegetation/fern_cluster_01.png",
+        "width": 625,
+        "height": 622,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "foliage"
+    },
+    {
+      "id": "tree_conifer_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "tree_conifer_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/vegetation/tree_conifer_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          130,
+          44,
+          647,
+          1141
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/vegetation/tree_conifer_01.png",
+        "width": 517,
+        "height": 1097,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "foliage"
+    },
+    {
+      "id": "tree_broadleaf_ancient_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "tree_broadleaf_ancient_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/vegetation/tree_broadleaf_ancient_01.png",
+        "width": 1792,
+        "height": 1008,
+        "crop": [
+          42,
+          36,
+          1759,
+          974
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/vegetation/tree_broadleaf_ancient_01.png",
+        "width": 1717,
+        "height": 938,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "foliage"
+    },
+    {
+      "id": "timber_fence_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "timber_fence_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/infrastructure/timber_fence_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          178,
+          198,
+          998,
+          590
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/infrastructure/timber_fence_01.png",
+        "width": 820,
+        "height": 392,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "architecture"
+    },
+    {
+      "id": "stone_bridge_section_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "stone_bridge_section_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/infrastructure/stone_bridge_section_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          70,
+          220,
+          1108,
+          601
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/infrastructure/stone_bridge_section_01.png",
+        "width": 1038,
+        "height": 381,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "architecture"
+    },
+    {
+      "id": "leaf_litter_01",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "leaf_litter_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/terrain/leaf_litter_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          189,
+          182,
+          966,
+          624
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/terrain/leaf_litter_01.png",
+        "width": 777,
+        "height": 442,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "terrain"
+    },
+    {
+      "id": "forest_floor_01",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "forest_floor_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/terrain/forest_floor_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          38,
+          132,
+          1130,
+          680
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/terrain/forest_floor_01.png",
+        "width": 1092,
+        "height": 548,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "terrain"
+    },
+    {
+      "id": "dirt_path_01",
+      "class": "terrain",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "dirt_path_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/terrain/dirt_path_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          66,
+          108,
+          1111,
+          687
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/terrain/dirt_path_01.png",
+        "width": 1045,
+        "height": 579,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "terrain"
+    },
+    {
+      "id": "riverford_house_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "riverford_house_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/architecture/riverford_house_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          115,
+          95,
+          1036,
+          676
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/architecture/riverford_house_01.png",
+        "width": 921,
+        "height": 581,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "architecture"
+    },
+    {
+      "id": "riverford_market_stall_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "riverford_market_stall_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/architecture/riverford_market_stall_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          111,
+          88,
+          1060,
+          704
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/architecture/riverford_market_stall_01.png",
+        "width": 949,
+        "height": 616,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "architecture"
+    },
+    {
+      "id": "ruin_arch_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "ruin_arch_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/ruins/ruin_arch_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          60,
+          121,
+          729,
+          985
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/ruins/ruin_arch_01.png",
+        "width": 669,
+        "height": 864,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "architecture"
+    },
+    {
+      "id": "ruin_wall_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "ruin_wall_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/ruins/ruin_wall_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          191,
+          81,
+          988,
+          709
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/ruins/ruin_wall_01.png",
+        "width": 797,
+        "height": 628,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "architecture"
+    },
+    {
+      "id": "ruin_stair_01",
+      "class": "environment",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "ruin_stair_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack1-environment.zip",
+        "file": "assets/environment/ruins/ruin_stair_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          44,
+          237,
+          748,
+          971
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/environment/ruins/ruin_stair_01.png",
+        "width": 704,
+        "height": 734,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "architecture"
+    },
+    {
+      "id": "status_bar_frame",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "status_bar_frame",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/ui/status_bar_frame.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          26,
+          248,
+          1143,
+          511
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/ui/status_bar_frame.png",
+        "width": 1117,
+        "height": 263,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "ui"
+    },
+    {
+      "id": "minimap_frame",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "minimap_frame",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/ui/minimap_frame.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          98,
+          44,
+          686,
+          1098
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/ui/minimap_frame.png",
+        "width": 588,
+        "height": 1054,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "ui"
+    },
+    {
+      "id": "hud_frame_primary",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "hud_frame_primary",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/ui/hud_frame_primary.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          30,
+          3,
+          1139,
+          752
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/ui/hud_frame_primary.png",
+        "width": 1109,
+        "height": 749,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "ui"
+    },
+    {
+      "id": "joystick_frame",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "joystick_frame",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/ui/joystick_frame.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          29,
+          168,
+          754,
+          947
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/ui/joystick_frame.png",
+        "width": 725,
+        "height": 779,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "ui"
+    },
+    {
+      "id": "interaction_prompt_frame",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "interaction_prompt_frame",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/ui/interaction_prompt_frame.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          101,
+          167,
+          1067,
+          585
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/ui/interaction_prompt_frame.png",
+        "width": 966,
+        "height": 418,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "ui"
+    },
+    {
+      "id": "action_button_frame",
+      "class": "ui",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "action_button_frame",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/ui/action_button_frame.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          17,
+          129,
+          768,
+          992
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/ui/action_button_frame.png",
+        "width": 751,
+        "height": 863,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "ui"
+    },
+    {
+      "id": "sunshaft_forest_01",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "sunshaft_forest_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/atmosphere/sunshaft_forest_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          13,
+          0,
+          784,
+          1146
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/atmosphere/sunshaft_forest_01.png",
+        "width": 771,
+        "height": 1146,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "atmosphere"
+    },
+    {
+      "id": "mist_near_01",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "mist_near_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/atmosphere/mist_near_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          0,
+          370,
+          1168,
+          691
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/atmosphere/mist_near_01.png",
+        "width": 1168,
+        "height": 321,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "atmosphere"
+    },
+    {
+      "id": "leaf_shadow_01",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "leaf_shadow_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/atmosphere/leaf_shadow_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          0,
+          12,
+          1168,
+          742
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/atmosphere/leaf_shadow_01.png",
+        "width": 1168,
+        "height": 730,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "atmosphere"
+    },
+    {
+      "id": "mist_distance_01",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "mist_distance_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/atmosphere/mist_distance_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          0,
+          318,
+          1168,
+          763
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/atmosphere/mist_distance_01.png",
+        "width": 1168,
+        "height": 445,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "atmosphere"
+    },
+    {
+      "id": "floating_motes_01",
+      "class": "atmosphere_vfx",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "floating_motes_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/atmosphere/floating_motes_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          24,
+          20,
+          759,
+          1114
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/atmosphere/floating_motes_01.png",
+        "width": 735,
+        "height": 1094,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "atmosphere"
+    },
+    {
+      "id": "dire_wolf_battle_01",
+      "class": "battle_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "dire_wolf_battle_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/creatures/dire_wolf_battle_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          145,
+          23,
+          974,
+          725
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/creatures/dire_wolf_battle_01.png",
+        "width": 829,
+        "height": 702,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "creature"
+    },
+    {
+      "id": "shadow_wisp_battle_01",
+      "class": "battle_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "shadow_wisp_battle_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/creatures/shadow_wisp_battle_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          194,
+          165,
+          586,
+          1026
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/creatures/shadow_wisp_battle_01.png",
+        "width": 392,
+        "height": 861,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "creature"
+    },
+    {
+      "id": "dire_wolf_exploration_01",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "dire_wolf_exploration_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/creatures/dire_wolf_exploration_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          216,
+          67,
+          977,
+          710
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/creatures/dire_wolf_exploration_01.png",
+        "width": 761,
+        "height": 643,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "creature"
+    },
+    {
+      "id": "companion_dog_exploration_01",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "companion_dog_exploration_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/creatures/companion_dog_exploration_01.png",
+        "width": 1168,
+        "height": 784,
+        "crop": [
+          242,
+          75,
+          860,
+          715
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/creatures/companion_dog_exploration_01.png",
+        "width": 618,
+        "height": 640,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "creature"
+    },
+    {
+      "id": "player_battle_base_01",
+      "class": "battle_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "player_battle_base_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/characters/player_battle_base_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          23,
+          131,
+          674,
+          1050
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/characters/player_battle_base_01.png",
+        "width": 651,
+        "height": 919,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "character"
+    },
+    {
+      "id": "npc_farmer_exploration_01",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "npc_farmer_exploration_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/characters/npc_farmer_exploration_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          228,
+          57,
+          568,
+          1074
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/characters/npc_farmer_exploration_01.png",
+        "width": 340,
+        "height": 1017,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "character"
+    },
+    {
+      "id": "npc_townsfolk_female_01",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "npc_townsfolk_female_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/characters/npc_townsfolk_female_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          214,
+          70,
+          569,
+          1102
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/characters/npc_townsfolk_female_01.png",
+        "width": 355,
+        "height": 1032,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "character"
+    },
+    {
+      "id": "player_exploration_base_01",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "player_exploration_base_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/characters/player_exploration_base_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          185,
+          46,
+          631,
+          1103
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/characters/player_exploration_base_01.png",
+        "width": 446,
+        "height": 1057,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "character"
+    },
+    {
+      "id": "npc_merchant_exploration_01",
+      "class": "exploration_body",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "npc_merchant_exploration_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/characters/npc_merchant_exploration_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          104,
+          46,
+          629,
+          1110
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/characters/npc_merchant_exploration_01.png",
+        "width": 525,
+        "height": 1064,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "character"
+    },
+    {
+      "id": "player_ui_portrait_01",
+      "class": "ui_dialogue_portrait",
+      "status": "production",
+      "referenceLineage": [
+        "visual/references/reference-zero.png"
+      ],
+      "runtimeRole": "player_ui_portrait_01",
+      "source": {
+        "zip": "assets/veilbound-gs-pack2-characters-ui.zip",
+        "file": "assets/characters/player_ui_portrait_01.png",
+        "width": 784,
+        "height": 1168,
+        "crop": [
+          0,
+          29,
+          784,
+          1168
+        ]
+      },
+      "output": {
+        "path": ".runtime/assets/characters/player_ui_portrait_01.png",
+        "width": 784,
+        "height": 1139,
+        "format": "PNG",
+        "alpha": {
+          "mode": "black_threshold",
+          "threshold": 12,
+          "feather": 18,
+          "required": true
+        }
+      },
+      "category": "character"
+    }
+  ]
+}
