@@ -12,9 +12,9 @@
     "check:slice": "node tools/check-playable-slice.mjs",
     "materialize:canon": "python tools/materialize-canon.py",
     "materialize:references": "python tools/materialize-references.py",
-    "pretest": "python tools/materialize-canon.py",
+    "pretest": "python tools/materialize-canon.py && npm run assets:materialize",
     "test": "node --test tests/*.test.js",
-    "preverify": "python tools/materialize-canon.py",
+    "preverify": "python tools/materialize-canon.py && npm run assets:materialize",
     "verify": "node tools/verify-production-boundary.mjs && node --test tests/*.test.js",
     "sim": "python simulation/run_closed_suite.py"
   },
