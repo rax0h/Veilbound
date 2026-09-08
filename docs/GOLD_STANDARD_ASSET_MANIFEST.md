@@ -1,11 +1,12 @@
 # Veilbound Gold-Standard Asset Manifest
 
 Rule: one final asset = one file. No collages/contact sheets. Do not skip IDs.
+Never mark COMPLETE unless the file exists under `assets/`.
 
 ## Environment
-GS001 `tree_broadleaf_ancient_01.png` — U — COMPLETE
-GS002 `tree_broadleaf_mature_01.png` — U — COMPLETE
-GS003 `tree_conifer_01.png` — U — COMPLETE
+GS001 `tree_broadleaf_ancient_01.png` — U — IN PROGRESS
+GS002 `tree_broadleaf_mature_01.png` — U
+GS003 `tree_conifer_01.png` — U
 GS004 `fern_01.png` — U
 GS005 `fern_cluster_01.png` — U
 GS006 `shrub_01.png` — U
@@ -56,4 +57,4 @@ GS044 `joystick_frame.png`
 GS045 `action_button_frame.png`
 GS046 `interaction_prompt_frame.png`
 
-Next asset: GS004 `fern_01.png`.
+Next asset: GS001 `assets/environment/vegetation/tree_broadleaf_ancient_01.png`.
