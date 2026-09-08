@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://veilbound.local/schemas/production-asset-manifest.schema.json",
+  "title": "Veilbound Production Asset Manifest",
+  "type": "object",
+  "required": ["version", "status", "scene", "assets"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "const": "production" },
+    "scene": { "type": "string", "minLength": 1 },
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "class", "status", "referenceLineage"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "path": { "type": "string", "pattern": "^assets/" },
+          "class": { "type": "string", "minLength": 1 },
+          "status": { "const": "production" },
+          "characterId": { "type": "string" },
+          "referenceLineage": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "pattern": "^references/" }
+          }
+        }
+      }
+    }
+  }
+}
