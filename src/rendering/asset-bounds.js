@@ -1,4 +1,4 @@
-// Authored alpha bounds, measured from the manifest PNGs; source pixels are unchanged.
+// Alpha bounds measured from materialized production PNGs, including reviewed source repairs.
 export const ASSET_BOUNDS = {
   "assets/props/barrel_01.png": [
     139,
@@ -217,10 +217,10 @@ export const ASSET_BOUNDS = {
     1093
   ],
   "assets/creatures/dire_wolf_battle_01.png": [
-    150,
-    27,
-    971,
-    722
+    147,
+    25,
+    972,
+    723
   ],
   "assets/creatures/shadow_wisp_battle_01.png": [
     202,
@@ -230,49 +230,49 @@ export const ASSET_BOUNDS = {
   ],
   "assets/creatures/dire_wolf_exploration_01.png": [
     218,
-    69,
-    974,
-    704
+    68,
+    975,
+    709
   ],
   "assets/creatures/companion_dog_exploration_01.png": [
-    246,
-    78,
-    858,
-    691
+    244,
+    77,
+    877,
+    719
   ],
   "assets/characters/player_battle_base_01.png": [
-    25,
-    134,
-    672,
-    1046
+    24,
+    133,
+    673,
+    1048
   ],
   "assets/characters/npc_farmer_exploration_01.png": [
-    231,
+    230,
     59,
-    565,
-    1069
+    566,
+    1072
   ],
   "assets/characters/npc_townsfolk_female_01.png": [
-    217,
-    73,
+    216,
+    72,
     567,
-    1098
+    1101
   ],
   "assets/characters/player_exploration_base_01.png": [
-    187,
-    50,
-    628,
-    1100
+    186,
+    47,
+    630,
+    1101
   ],
   "assets/characters/npc_merchant_exploration_01.png": [
-    106,
-    48,
+    105,
+    47,
     627,
-    1106
+    1110
   ],
   "assets/characters/player_ui_portrait_01.png": [
-    19,
-    38,
+    3,
+    31,
     784,
     1168
   ]

@@ -9,6 +9,8 @@ re-uploading production art does not leave stale per-file metadata behind.
 from __future__ import annotations
 
 import json
+import subprocess
+import sys
 import shutil
 import stat
 import struct
@@ -119,6 +121,7 @@ def main() -> None:
             destination = staging / path
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_bytes(data)
+        subprocess.run([sys.executable, str(ROOT / "tools/repair-source-alpha.py"), str(staging)], check=True)
         runtime_roots = {PurePosixPath(path).parts[1] for path in expected}
         for directory in runtime_roots:
             target = ROOT / "assets" / directory

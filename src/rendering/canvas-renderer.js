@@ -24,7 +24,7 @@ export class RiverfordCanvasRenderer extends RendererContract {
     if(!this.ctx)throw new Error('Your browser could not start the world renderer.');
     const paths=[...new Set(assetBundle)];let loaded=0;
     await Promise.all(paths.map(async path=>{
-      const img=new Image();img.decoding='async';img.src=path;
+      const img=new Image();img.decoding='async';img.src=path+'?art=alpha-repair-1';
       try{await img.decode()}catch{throw new Error(`Unable to load ${path}. Please reload the journey.`)}
       this.images.set(path,img);onProgress(++loaded/paths.length);
     }));

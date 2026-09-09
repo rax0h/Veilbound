@@ -12,6 +12,8 @@ There is deliberately **no placeholder renderer**. Missing production art fails 
 
 The current production archives can be run as the compact Riverford Verge slice. The perspective canvas renderer composes the environment, character, creature, atmosphere, and UI artwork with authored PNG alpha; use `npm start`, then open `http://localhost:4173`. Before serving, `npm start` safely materializes the manifest-declared runtime files, rejects unsafe or unexpected archive contents, and validates each PNG's dimensions, format, and alpha metadata.
 
+Nine damaged character/creature alpha masks are restored during materialization from `assets/alpha-repairs.json`. The masks are bound to original archive hashes; RGB artwork is unchanged. Install the image decoder once with `python -m pip install -r tools/image-requirements.txt` before running the slice.
+
 For exact implemented/not-implemented status, read `docs/IMPLEMENTATION_STATUS.md`.
 
 ## Visual rule
@@ -21,6 +23,7 @@ For exact implemented/not-implemented status, read `docs/IMPLEMENTATION_STATUS.m
 ## Verify
 
 ```bash
+python -m pip install -r tools/image-requirements.txt
 npm test
 npm run verify
 ```

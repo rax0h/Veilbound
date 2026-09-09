@@ -32,6 +32,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install image decoder
+        run: python -m pip install -r tools/image-requirements.txt
+
       - name: Materialize transparent Gold Standard assets
         run: npm run assets:materialize
 

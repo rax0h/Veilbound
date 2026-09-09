@@ -23,7 +23,7 @@
 
 Passing verification is **not** full-art acceptance. See SLICE_ACCEPTANCE.md.
 
-Several archive PNGs contain interior transparent gaps, especially player_battle_base_01.png, dire_wolf_exploration_01.png and npc_merchant_exploration_01.png. These gaps are visible in the source pixels and show scenery through bodies. The renderer preserves that alpha; it does not invent replacement pixels or key colors. The player portrait has similar damage and is not used as a gameplay sprite. No farmer dialogue portrait is supplied, so farmer dialogue uses text without repurposing his exploration body.
+The nine character/creature source-alpha repairs are applied during materialization from reviewed, hash-bound masks. Original RGB is preserved byte-for-byte, including detail beneath the damaged transparent interiors. Runtime uses ordinary PNG alpha; there is no runtime color key or replacement artwork. Original archives remain preserved. The deliberately translucent shadow wisp and all environment/VFX/UI files remain unchanged. Field notes includes a confirmed Replay slice action for another encounter.
 
 The bundled Reference Zero proxy does not decode as an image, and the packed proxy archive ends before its gzip end marker. Written canon and visual contracts were read; an exact comparison to the original reference image cannot be claimed.
 

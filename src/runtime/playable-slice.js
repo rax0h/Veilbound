@@ -1,6 +1,6 @@
 import { moveCharacter } from '../world/movement.js';
 import { applyDamage } from '../combat/combat.js';
-import { RiverfordCanvasRenderer } from '../rendering/canvas-renderer.js';
+import { RiverfordCanvasRenderer } from '../rendering/canvas-renderer.js?art=alpha-repair-1';
 import { scenery, atmosphereAssets, groundAssets, SPAWN, WOLF_HOME, groundHeight, walkable, moveWithinScene } from '../world/riverford.js';
 import { frameDelta, inRange, readJourney } from './slice-state.js';
 
@@ -92,7 +92,7 @@ function restore(){
   try{const saved=readJourney(localStorage.getItem('veilbound.slice.save'));if(saved){Object.assign(player.transform,saved.position);player.transform.y=groundHeight(player.transform.x,player.transform.z);player.resources.hp=saved.hp;player.resources.focus=saved.focus;wolf.alive=saved.wolfAlive;metFarmer=saved.metFarmer;visitedMarket=saved.visitedMarket;Object.assign(dog.transform,{x:player.transform.x-.9,z:player.transform.z-.5});return true;}}catch{}return false;
 }
 function openNotes(){if(inCombat){say('Field notes can wait until you’re clear of the wolf.');return;}stopInput();$('#notes').hidden=false;$('#journeyProgress').textContent=wolf.alive?(metFarmer?'Elian warned you about the wolf beyond the bridge. The crossing is east of the signpost. Riverford’s trader is farther up the northern road.':'Elian tends the verge by the ancient oak. The road continues north to Riverford; the bridge leads east to the old stones.'):'The dire wolf has retreated. The bridge is quiet again. Elian is by the ancient oak; the trader has water on the northern road.';$('#closeNotes').focus();}
-function closeNotes(){ $('#notes').hidden=true;stopInput();$('#gameCanvas').focus(); }
+function closeNotes(){ $('#restartWarning').hidden=true;$('#restartSlice').textContent='Replay slice';$('#notes').hidden=true;stopInput();$('#gameCanvas').focus(); }
 addEventListener('keydown',e=>{
   const key=e.key.toLowerCase();if(['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright',' '].includes(key))e.preventDefault();
   if(modalOpen()){if(!e.repeat&&(key==='escape'||key==='e')){$('#dialogue').hidden?closeNotes():closeDialogue();}return;}
@@ -107,6 +107,15 @@ addEventListener('resize',()=>renderer.resize($('#game').clientWidth,$('#game').
 $('#closeDialogue').onclick=closeDialogue;$('#dialogueAction').onclick=()=>dialogueCallback?.();$('#attack').onclick=strike;$('#cast').onclick=cast;$('#flee').onclick=withdraw;$('#save').onclick=()=>save();$('#help').onclick=openNotes;$('#closeNotes').onclick=closeNotes;$('#prompt').onclick=interact;
 $('#touchStrike').onclick=strike;$('#touchAegis').onclick=cast;$('#touchInteract').onclick=interact;
 $('#retry').onclick=()=>location.reload();
+$('#restartSlice').onclick=()=>{
+  if($('#restartWarning').hidden){$('#restartWarning').hidden=false;$('#restartSlice').textContent='Confirm replay';return;}
+  stopInput();endCombat();player.alive=true;player.resources.hp=140;player.resources.focus=80;
+  Object.assign(player.transform,{...SPAWN,y:0});Object.assign(dog.transform,{x:SPAWN.x-1,z:SPAWN.z-.5,y:0});
+  wolf.alive=true;wolf.resources.hp=72;Object.assign(wolf.transform,{...WOLF_HOME,y:0});
+  metFarmer=false;visitedMarket=false;attackReady=0;aegisReady=0;defeatUntil=0;withdrawUntil=0;
+  fx.aegisUntil=0;fx.slashUntil=0;fx.numbers=[];renderer.firstFrame=true;
+  closeNotes();save(false);say('A fresh journey. Elian is by the ancient oak.',6);
+};
 function updateStick(clientX,clientY){
   const r=stick.getBoundingClientRect(),dx=clientX-r.left-r.width/2,dy=clientY-r.top-r.height/2,max=r.width*.34,len=Math.hypot(dx,dy)||1,scale=Math.min(1,max/len),px=dx*scale,py=dy*scale;
   target=null;knob.style.transform=`translate(calc(-50% + ${px}px),calc(-50% + ${py}px))`;
